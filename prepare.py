@@ -15,7 +15,6 @@ def prepare_data(df):
     return df
 
 
-
 def impute_zeros(df):
     df.resample('D').mean()
     df['calories_burned'].replace(to_replace= 0, value= 3317, inplace=True)
